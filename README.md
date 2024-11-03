@@ -15,3 +15,7 @@ The principle of least privilege means granting only the permissions needed to p
 - Reduce the risk of unauthorized access.
 - Limit potential damage in case of a security incident.
 - Simplify access management by restricting permissions to essential actions.
+
+
+#### Policy JSON Example
+The policy JSON file is available [here](policy.json).
