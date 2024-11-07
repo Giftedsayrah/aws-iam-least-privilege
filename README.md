@@ -22,3 +22,38 @@ The policy JSON file is available [here](policy.json).
 
 ![Screenshot of IAM Console](screenshots)
 
+## Steps to Reproduce
+
+### 2. Create an IAM Role
+Follow these steps to create an IAM role for EC2 with a least-privilege policy attached.
+
+1. **Navigate to the IAM Console**  
+   - Go to the IAM Console in AWS.
+   - In the left sidebar, click on **Roles**.
+
+2. **Create a New Role**  
+   - Click on the **Create role** button.
+
+3. **Choose a Trusted Entity (EC2)**  
+   - Under **Select trusted entity**, select **AWS service**.
+   - In the list of services, select **EC2**, as this role will be used by an EC2 instance.
+   - Click **Next**.
+
+4. **Attach the Policy to the Role**  
+   - Search for the policy you created (e.g., `ReadOnlyAccessToMyS3Bucket`).
+   - Select the policy by checking the box next to it, then click **Next**.
+
+5. **Name and Describe the Role**  
+   - Enter a name for the role, such as `EC2ReadOnlyS3Access`, and add a description for future reference.
+   - Click **Create Role** to finalize the setup.
+
+6. **Assign the Role to an EC2 Instance (Optional)**  
+   - In the **EC2 Console**, select an instance, click on **Actions** > **Security** > **Modify IAM Role**.
+   - Choose the role you just created (`EC2ReadOnlyS3Access`) from the dropdown and click **Update IAM role**.
+
+---
+
+This will create an IAM role that grants only the necessary permissions for EC2 instances to access specific S3 resources.
+
+
+
