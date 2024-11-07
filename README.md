@@ -20,7 +20,7 @@ The principle of least privilege means granting only the permissions needed to p
 #### Policy JSON Example
 The policy JSON file is available [here](policy.json).
 
-![Screenshot of IAM Console](screenshots)
+![Screenshot of IAM Console](image (1).png)
 
 ## Steps to Reproduce
 
